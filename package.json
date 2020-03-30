@@ -1,0 +1,16 @@
+{
+  "name": "rtc_tabs",
+  "version": "1.0.0",
+  "description": "Test code for cross-tab communication, WebRTC, and getDisplayMedia",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm run build && npm i -g",
+    "start": "tsc --watch -p .",
+    "build": "tsc -p ."
+  },
+  "author": "Joe Ludwig",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}

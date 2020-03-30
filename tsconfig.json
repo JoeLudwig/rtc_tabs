@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+	  "target": "es2015",
+	  "module": "commonjs",
+	  "lib": ["es6", "es2015", "dom"],
+	  "declaration": true,
+	  "outDir": "lib",
+	  "rootDir": "src",
+	  "strict": true,
+	  "types": [],
+	  "experimentalDecorators": true,
+	  "allowSyntheticDefaultImports": true,
+	  "importHelpers": true,
+		"esModuleInterop": true,
+	  "resolveJsonModule": true,
+	  "moduleResolution" : "node",
+	  "sourceMap": true
+	}
+}
