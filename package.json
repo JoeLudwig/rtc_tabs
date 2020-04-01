@@ -5,12 +5,20 @@
   "main": "index.js",
   "scripts": {
     "deploy": "npm run build && npm i -g",
-    "start": "tsc --watch -p .",
-    "build": "tsc -p ."
+    "start": "webpack --env=dev --watch --progress",
+    "build": "webpack"
   },
   "author": "Joe Ludwig",
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "typescript": "^3.8.3"
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "bind-decorator": "^1.0.11",
+    "tslib": "^1.11.1"
   }
 }
