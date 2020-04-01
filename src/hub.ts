@@ -14,7 +14,16 @@ export function ready()
 		clientLink.href += "?poison=" + Date.now();
 	}	
 
-	ComClient.instance;
+	ComClient.instance.setOnTrack( ( e ) =>
+	{
+		let vid = document.getElementById( "incoming_video" ) as HTMLVideoElement;
+		if( vid )
+		{
+			vid.srcObject = e.streams[0];
+			vid.play();
+		}	
+	
+	});
 }
 
 ready();

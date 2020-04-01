@@ -1,0 +1,13 @@
+.Button
+{
+	border: solid 1px darkblue;
+	background-color: lightblue;
+	width: fit-content;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.Button:hover
+{
+	background-color: #4c4cad;
+}

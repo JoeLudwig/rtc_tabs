@@ -121,8 +121,19 @@ export class ComClient
 	public async initRtc()
 	{
 		console.log( "initRtc" );
-		this.peerConnection.createDataChannel( "test" );
+		this.dataChannel = this.peerConnection.createDataChannel( "data" );
 	}
 
+	public async addStream( stream: MediaStream )
+	{
+		for( let track of stream.getVideoTracks() )
+		{
+			this.peerConnection.addTrack( track, stream );
+		}
+	}
 
+	public setOnTrack( fn: ( e: RTCTrackEvent ) => void )
+	{
+		this.peerConnection.ontrack = fn;
+	}
 }
