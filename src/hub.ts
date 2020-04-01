@@ -8,6 +8,12 @@ export function ready()
 		root.textContent = "Fnord hub3";
 	}	
 
+	let clientLink = document.getElementById( "client_link" ) as HTMLAnchorElement;
+	if( clientLink )
+	{
+		clientLink.href += "?poison=" + Date.now();
+	}	
+
 	ComClient.instance;
 }
 
