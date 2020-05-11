@@ -128,7 +128,9 @@ export class ComClient
 	{
 		for( let track of stream.getVideoTracks() )
 		{
-			this.peerConnection.addTrack( track, stream );
+			let sender = this.peerConnection.addTrack( track, stream );
+			let params = sender.getParameters();
+			console.log( "sender params", params );
 		}
 	}
 
