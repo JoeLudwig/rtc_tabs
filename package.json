@@ -2,7 +2,7 @@
   "name": "rtc_tabs",
   "version": "1.0.0",
   "description": "Test code for cross-tab communication, WebRTC, and getDisplayMedia",
-  "main": "index.js",
+  "main": "src/client.ts",
   "scripts": {
     "deploy": "npm run build && npm i -g",
     "start": "webpack --env=dev --watch --progress",
